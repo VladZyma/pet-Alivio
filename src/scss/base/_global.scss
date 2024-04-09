@@ -12,7 +12,13 @@
 
 // CONTAINERS
 ._container {
-  max-width: 123rem;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+._container-big {
+  max-width: 154rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 }

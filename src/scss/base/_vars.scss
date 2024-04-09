@@ -3,7 +3,27 @@ $default: #243f4d;
 $title: #191919;
 $modal-default: #436372;
 
-%Roboto-400 {
-  font-family: 'Roboto-Regular', sans-serif;
+%Lato-400 {
+  font-family: 'Lato-Regular', sans-serif;
   font-weight: 400;
+}
+
+%Lato-500 {
+  font-family: 'Lato-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%Lato-600 {
+  font-family: 'Lato-Semibold', sans-serif;
+  font-weight: 600;
+}
+
+%Georgia-400 {
+  font-family: 'Georgia', sans-serif;
+  font-weight: 400;
+}
+
+%Georgia-700 {
+  font-family: 'Georgia-Bold', sans-serif;
+  font-weight: 700;
 }

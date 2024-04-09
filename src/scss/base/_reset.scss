@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 1.6rem;
+  @extend %Roboto-400;
+  color: $default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-family: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+  font-style: italic;
+}
+
+a[class]:link,
+a[class]:visited,
+a[class]:hover,
+a[class]:active {
+  text-decoration: none;
+}
+
+button[class] {
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}

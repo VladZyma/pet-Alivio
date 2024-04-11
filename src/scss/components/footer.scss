@@ -1,0 +1,67 @@
+.footer {
+  padding: 10rem 0 14.6rem;
+  background-color: $dark-green;
+
+  @media (max-width: 991.8px) {
+    padding: 6rem 0;
+  }
+
+  &__logo {
+    margin: 0 0 7.4rem 0;
+    width: 10.8rem;
+    height: 3.2rem;
+    @media (max-width: 991.8px) {
+      margin: 0 0 4rem 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    @media (max-width: 991.8px) {
+      gap: 3rem;
+    }
+  }
+
+  &__nav-link {
+    &:link,
+    &:visited {
+      padding-bottom: 3px;
+      font-size: 2.5rem;
+      @extend %Lato-600;
+      line-height: 120%;
+      color: #fff;
+
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 3px;
+        background-color: transparent;
+        transition: all 0.3s ease;
+      }
+      @media (max-width: 991.8px) {
+        font-size: 2rem;
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: $accent;
+
+      &::after {
+        left: 0;
+        right: 0;
+        width: 100%;
+        transform: translateX(0);
+        background-color: $accent;
+      }
+    }
+  }
+}

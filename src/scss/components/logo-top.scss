@@ -1,0 +1,16 @@
+.logo-top {
+  &__icon {
+    width: 8.1rem;
+    height: 2.4rem;
+    fill: transparent;
+    stroke: transparent;
+
+    &:hover {
+      cursor: pointer;
+      path {
+        fill: $light-green;
+        fill: red;
+      }
+    }
+  }
+}

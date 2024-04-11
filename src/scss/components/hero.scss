@@ -1,0 +1,39 @@
+.hero {
+  position: relative;
+  min-height: calc(100svh - 8.6rem);
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__content {
+    max-width: 44rem;
+    padding-top: 17.5rem;
+  }
+
+  &__content-title {
+    margin-bottom: 3rem;
+
+    font-size: 6.5rem;
+    @extend %Georgia-700;
+    line-height: 114%;
+    color: $green;
+  }
+
+  &__content-text {
+    margin-bottom: 5rem;
+    max-width: 42rem;
+    font-size: 2rem;
+    line-height: 155%;
+    color: #484848;
+  }
+  &__content-btn {
+  }
+}

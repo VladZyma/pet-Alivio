@@ -16,6 +16,9 @@
   &__content {
     max-width: 44rem;
     padding-top: 17.5rem;
+    @media (max-width: 766.8px) {
+      padding-top: 8rem;
+    }
   }
 
   &__content-title {
@@ -25,6 +28,9 @@
     @extend %Georgia-700;
     line-height: 114%;
     color: $green;
+    @media (max-width: 766.8px) {
+      font-size: 5rem;
+    }
   }
 
   &__content-text {
@@ -33,7 +39,9 @@
     font-size: 2rem;
     line-height: 155%;
     color: #484848;
-  }
-  &__content-btn {
+    @media (max-width: 766.8px) {
+      font-size: 1.6rem;
+      max-width: 34rem;
+    }
   }
 }

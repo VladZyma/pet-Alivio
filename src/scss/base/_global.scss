@@ -53,3 +53,26 @@
     min-height: 5rem;
   }
 }
+
+// TITLE & SUBTITLE
+.title {
+  font-size: 2.4rem;
+  @extend %Lato-600;
+  line-height: 157%;
+  color: $default;
+}
+
+.subtitle {
+  font-size: 5rem;
+  @extend %Georgia-700;
+  line-height: 157%;
+  color: $green;
+}
+
+// TEXT
+.text {
+  font-size: 2rem;
+  @extend %Lato-500;
+  line-height: 150%;
+  color: $default;
+}

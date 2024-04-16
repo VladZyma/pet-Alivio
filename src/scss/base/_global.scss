@@ -60,6 +60,13 @@
   @extend %Lato-600;
   line-height: 157%;
   color: $default;
+
+  @media (max-width: 1199.8px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 581.8px) {
+    font-size: 1.8rem;
+  }
 }
 
 .subtitle {
@@ -67,6 +74,13 @@
   @extend %Georgia-700;
   line-height: 157%;
   color: $green;
+
+  @media (max-width: 1199.8px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 581.8px) {
+    font-size: 2rem;
+  }
 }
 
 // TEXT
@@ -75,4 +89,7 @@
   @extend %Lato-500;
   line-height: 150%;
   color: $default;
+  @media (max-width: 581.8px) {
+    font-size: 1.6rem;
+  }
 }

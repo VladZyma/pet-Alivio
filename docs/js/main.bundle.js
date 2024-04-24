@@ -1,0 +1,1 @@
+!function(){"use strict";const e=document.querySelector(".mobile-btn"),t=document.querySelector(".nav__inner");e.addEventListener("click",(function(){e.classList.toggle("mobile-btn--active"),t.classList.toggle("nav__inner--mobile"),document.body.classList.toggle("_no-scroll")}))}();

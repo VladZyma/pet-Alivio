@@ -51,6 +51,7 @@
     @media (max-width: 991.8px) {
       flex-wrap: wrap;
       align-items: flex-end;
+      justify-content: center;
     }
     @media (max-width: 840.8px) {
       justify-content: center;
@@ -61,7 +62,7 @@
 
 .card {
   flex: 0 1 39rem;
-  @media (max-width: 840.8px) {
+  @media (max-width: 991.8px) {
     flex: 0 1 52rem;
   }
 

@@ -95,6 +95,7 @@ function img() {
   return src([
     `./${srcFolder}/images/**/*.*`,
     `!./${srcFolder}/images/**/*.svg`,
+    `!./${srcFolder}/images/**/*.mp4`,
   ])
     .pipe(changed(`./${distFolder}/images`))
     .pipe(avif({ quality: 50 }))

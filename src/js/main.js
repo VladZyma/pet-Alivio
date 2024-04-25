@@ -42,6 +42,7 @@ headerObserver.observe(heroSection);
 
 // PAGE NAVIGATION
 const navListEl = document.querySelector('.nav__list');
+const footerNavListEl = document.querySelector('.footer__nav');
 
 navListEl.addEventListener('click', function (e) {
   e.preventDefault();
@@ -53,6 +54,15 @@ navListEl.addEventListener('click', function (e) {
     mobileNavEl.classList.remove('nav__inner--mobile');
     document.body.classList.remove('_no-scroll');
 
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  }
+});
+
+footerNavListEl.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains('footer__nav-link')) {
+    const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 });

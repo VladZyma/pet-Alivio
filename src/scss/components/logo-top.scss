@@ -4,13 +4,5 @@
     height: 2.4rem;
     fill: transparent;
     stroke: transparent;
-
-    &:hover {
-      cursor: pointer;
-      path {
-        fill: $light-green;
-        fill: red;
-      }
-    }
   }
 }

@@ -21,8 +21,10 @@ function headerObsCallback(entries, observer) {
 
   if (!entry.isIntersecting) {
     header.classList.add('_sticky');
+    heroSection.classList.add('_m-top');
   } else {
     header.classList.remove('_sticky');
+    heroSection.classList.remove('_m-top');
   }
 }
 

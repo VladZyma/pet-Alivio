@@ -48,7 +48,10 @@ navListEl.addEventListener('click', function (e) {
 
   if (e.target.classList.contains('nav__link')) {
     const id = e.target.getAttribute('href');
-    console.log(id);
+    // for mobile nav
+    mobileNavBtnEl.classList.remove('mobile-btn--active');
+    mobileNavEl.classList.remove('nav__inner--mobile');
+    document.body.classList.remove('_no-scroll');
 
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }

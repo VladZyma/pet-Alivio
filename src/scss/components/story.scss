@@ -90,7 +90,7 @@
 
     transition: all 0.3s ease;
   }
-  &__bg.hidden {
+  &__bg.video__bg--hidden {
     background: rgba(0, 0, 0, 0);
   }
 
@@ -109,6 +109,9 @@
     left: 50%;
     z-index: 2;
     transform: translate(-50%, -50%);
+  }
+  &__btn.video__btn--hidden {
+    display: none;
   }
 
   &__btn-icon {

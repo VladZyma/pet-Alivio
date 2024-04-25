@@ -79,3 +79,54 @@ allSections.forEach((section) => {
   sectionObserver.observe(section);
   section.classList.add('section--hidden');
 });
+
+// VIDEO
+const videoEl = document.querySelector('.video__element');
+const videoWrapperEl = document.querySelector('.video__wrapper');
+const videoBgEl = document.querySelector('.video__bg');
+const videoBtnEl = document.querySelector('.video__btn');
+const videoBtnIconEl = document.querySelector('.video__btn-icon');
+
+function showHideVideoBtn(e) {
+  if (e.type === 'mouseleave') {
+    videoBtnEl.classList.add('video__btn--hidden');
+  } else {
+    videoBtnEl.classList.remove('video__btn--hidden');
+  }
+}
+
+videoBtnEl.addEventListener('click', function () {
+  if (videoEl.paused) {
+    videoEl.play();
+
+    videoBtnIconEl.innerHTML =
+      '<use href="./images/svgsprite/sprite.symbol.svg#story--pause-btn"></use>';
+
+    videoBgEl.classList.add('video__bg--hidden');
+
+    videoWrapperEl.onmouseleave = showHideVideoBtn;
+    videoWrapperEl.onmouseenter = showHideVideoBtn;
+  } else {
+    videoEl.pause();
+
+    videoBtnIconEl.innerHTML =
+      '<use href="./images/svgsprite/sprite.symbol.svg#story--play-btn"></use>';
+
+    videoBgEl.classList.remove('video__bg--hidden');
+
+    videoWrapperEl.onmouseleave = null;
+    videoWrapperEl.onmouseenter = null;
+  }
+});
+
+videoEl.addEventListener('ended', function () {
+  console.log('end');
+  videoBtnIconEl.innerHTML =
+    '<use href="./images/svgsprite/sprite.symbol.svg#story--play-btn"></use>';
+
+  videoBgEl.classList.remove('video__bg--hidden');
+
+  videoWrapperEl.onmouseleave = null;
+  videoWrapperEl.onmouseenter = null;
+  videoBtnEl.classList.remove('video__btn--hidden');
+});

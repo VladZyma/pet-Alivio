@@ -37,3 +37,17 @@ const headerObserver = new IntersectionObserver(
   headerObsOptions
 );
 headerObserver.observe(heroSection);
+
+// PAGE NAVIGATION
+const navListEl = document.querySelector('.nav__list');
+
+navListEl.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains('nav__link')) {
+    const id = e.target.getAttribute('href');
+    console.log(id);
+
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  }
+});

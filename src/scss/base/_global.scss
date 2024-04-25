@@ -26,6 +26,16 @@
   margin-top: 8.5rem;
 }
 
+// REVEAL SECTIONS
+section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 // CONTAINERS
 ._container {
   max-width: 140rem;
